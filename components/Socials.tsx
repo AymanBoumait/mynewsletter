@@ -1,15 +1,15 @@
-import { socials } from '@/constants'
+import { socials } from "@/constants";
 import { SocialIcon } from "react-social-icons";
-
-import React from 'react'
 
 function Socials() {
   return (
-    <div>
-        {socials.map((social) => (           
-            <div  key={social.id}
-            className="flex items-center justify-center flex-1 animate-fade-in-3 cursor-pointer group md:hover:shadow-outline-gray rounded-[9px] p-5 md:p-10 transition duration-200 ease-out">
-            <SocialIcon
+    <div className="flex items-center justify-center sm:gap-x-4 mt-28 md:w-[400px]">
+      {socials.map((social) => (
+        <div
+          key={social.id}
+          className="flex items-center justify-center flex-1 animate-fade-in-3 cursor-pointer group md:hover:shadow-outline-gray rounded-[9px] p-5 md:p-10 transition duration-200 ease-out"
+        >
+          <SocialIcon
             url={social.url}
             fgColor="#FFF"
             bgColor="transparent"
@@ -21,10 +21,10 @@ function Socials() {
             </p>
             <p className="text-[#4B4C52]">{social.handle}</p>
           </div>
-           </div>
-        ))}
+        </div>
+      ))}
     </div>
-  )
+  );
 }
 
-export default Socials
+export default Socials;
