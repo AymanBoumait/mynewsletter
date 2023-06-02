@@ -109,14 +109,14 @@ function NewsletterForm() {
             <div className="text-xs sm:text-sm text-[#4B4C52]">
               {successMessage ? (
                 <p>
-                  Thank you for subscribing! You&apos;re now part of our newsletter, and you'll receive updates about our upcoming projects at{" "}
+                  Thank you for subscribing! You&apos;re now part of our newsletter, and you&apos;ll receive updates about our upcoming projects at{" "}
                   <span className="text-[#ADB0B1]">
                     {successMessage.email_address}
                   </span>.
                 </p>
               ) : (
                 <p>
-                  You are already subscribed to our newsletter. You'll continue to receive updates about our projects. Thank you for your support!
+                  You are already subscribed to our newsletter. You&apos;ll continue to receive updates about our projects. Thank you for your support!
                 </p>
               )}
 
